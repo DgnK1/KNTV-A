@@ -14,6 +14,10 @@ ul {
     list-style: none;
 }
 
+button{
+    border: none;
+}
+
 
 .nav-top-bar {
     background-color: #1a1a1a;
@@ -74,6 +78,43 @@ ul {
     font-weight: 600;
 }
 
+.userDropbtn {
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+} 
+  
+.userDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #eeeeee;
+    overflow: auto;
+    z-index: 998;
+}
+
+.userDropdown-content strong{
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 600;
+}
+  
+.userDropdown-content li a {
+    display: flex;
+    color: black;
+    padding: 12px;
+}
+
+.userDropdown a:hover, button:hover {
+    background-color: #ddd;
+}
+
+.userShow {
+    display: block;
+}
+
 
 /*Dropdown*/
 .dropbtn {
@@ -84,6 +125,11 @@ ul {
     cursor: pointer;
     background-color: #ffffff;
 } 
+
+.userDropdown {
+    position: relative;
+    display: inline-block;
+  }
   
 .dropdown-content {
     display: none;
@@ -203,7 +249,98 @@ ul {
     border-radius: 50%;
 }
 
-/* PRODUCT DETAILS for product page */
+/* Log in Form */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000; 
+}
+
+
+#id01 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 997;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    transition: opacity 0.3s ease;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Style for Log In Button */
+.logInButton {
+    background-color: #000000; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.logInButton:hover {
+    background-color: #6e6e6e; 
+}
+
+/* Style for Sign up Button */
+#sign-up-form{
+    display: none;
+}
+
+.signUpButton {
+    background-color: #a5a5a5; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.signUpButton:hover {
+    background-color: #000000; 
+}
+
+#logoutBtn {
+    cursor: pointer;
+    margin: 15px 15px;
+    color: #4d4d4d;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* NEWS details */
 #news-details {
     display: block;
     max-width: 1000px;
@@ -298,7 +435,6 @@ ul {
     margin: 20px auto;
 }
 
-/*related-news*/
 .r-news-box {
     max-width: 100%;
     width: 100%;
@@ -495,6 +631,10 @@ footer {
         display: none;
     }
 
+    .userDropdown{
+        margin-right: 100px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -641,6 +781,9 @@ footer {
     .main-news-text strong {
         font-size: 1.4rem;
     }
+    .userDropdown{
+        margin-right: 50px;
+    }
 }
 
 
@@ -674,5 +817,56 @@ footer {
 
     .nav-user {
         display: none;
+    }
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width:1024px){
+    .modal{
+        width: 900px;
+    }    
+}
+
+@media screen and (max-width:820px){
+    .modal{
+        width: 800px;
+    }
+        
+}
+
+@media screen and (max-width:712px){
+    .modal{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width:540px){
+    .modal{
+        width: 500px;
+    }       
+}
+
+
+@media screen and (max-width:375px){
+    .modal{
+        width: 400px;
+    }
+    .userDropdown{
+        margin-right: 20px;
     }
 }
