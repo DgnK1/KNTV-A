@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KNews</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut-icon" href="images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body>
+    <div class="nav-top-bar">
+      <span>
+        <marquee loop="-1" scrollamount="5" width="100%">
+        Subscribe to our newsletter to stay updated to latest news
+        in and outside of our campus | Exclusive discount from sponsored stores
+        and outlets are also sent through newsletter
+        </marquee>
+      </span>
+
+    </div>
+
+    <nav class="navigation">
+      <a href="#" class="logo">
+        <img src="images/KNTVb.png" alt="logo" />
+      </a>
+
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#">News</a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Weather</a></li>
+
+        <div class="dropdown">
+          <button onclick="dropDown()" class="dropbtn">More</button>
+        </div>
+        
+        <div id="myDropdown" class="dropdown-content">
+
+          <div class="dropdown-link-box">
+            <strong>Sections</strong>
+              <div class="dropdown-links">
+                <ul>
+                  <li><a href="#">Weather</a></li>
+                  <li><a href="#">Regions</a></li>
+                  <li><a href="#">World</a></li>
+                  <li><a href="#">Opinion</a></li>
+                  <li><a href="#">Classified Odd</a></li>
+                </ul>
+              </div>
+          </div> 
+
+          <div class="dropdown-link-box">
+            <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+          </div> 
+  
+          <div class="dropdown-link-box">
+            <strong>Programs</strong>
+            <ul>
+              <li><a href="#">KNews</a></li>
+              <li><a href="#">KPCTV</a></li>
+              <li><a href="#">SPCTN</a></li>
+            </ul>
+          </div> 
+  
+          <div class="dropdown-link-box">
+            <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">KPC Corner</a></li> 
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Brand News</a></li>
+            <li><a href="#">Intramurals</a></li>
+          </ul>
+          </div> 
+
+      </div>
+      </ul>
+
+      <div class="nav-btns">
+        <!-- Search Box -->
+        <input type="checkbox" id="nav-search-btn" />
+        <label for="nav-search-btn" class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <form action="">
+            <!--close-->
+            <label for="nav-search-btn" class="nav-search-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <div class="nav-search-box">
+              <input type="text" placeholder="Search Topic" required />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </label>
+
+        <a href="#" class="nav-user">
+          <i class="fa-solid fa-user"></i>
+        </a>
+      </div>
+    </nav>
+    <!--navigation-end-->
+
+<!--main-news-->
+<section id="news-details">
+  <div class="main-news-text">
+
+    <span class="category">Regions</span>
+    <strong>Athletes Gear Up for Intramurals</strong>
+    <p>KNTV</p>
+    <p>Published October 3, 2024 7:16 AM PHT | Updated Oct 4, 2024 1:23 AM PHT</p>
+
+    <div class="main-news-img">
+      <img src="images/artpic1.jpg">
+    </div>
+    <p>Students playing various sports in quadrangle, including Volleyball (on the left),
+      Badminton(on the right) on Wednesday afternoon inside the campus. Kyle Sabatin, KNTV
+    </p>
+
+    <div class="m-news-text">
+      <span class="m-box-details">
+        This October's intramurals are shaping up to be one of the most exciting events of the year, blending competition, 
+        entertainment, and community spirit. 
+        <br>
+        <br>
+        Athletes across a wide range of sports, including basketball, volleyball, athletics, 
+        and football, have been rigorously preparing for months, honing their skills and working on team dynamics to ensure top 
+        performance on the day of competition.
+         
+        <div class="main-news-img">
+          <img src="images/art-pic-2.jpg">
+        </div>
+        <p>Kadasig gym, where basketball matches are held, with other sports like futsal and pickleball, 
+          with a stage for the Miss Intramurals. Kyle Sabatin, KNTV
+        </p>
+
+        <br>
+        Training camps, friendly matches, and intense practice sessions have helped sharpen
+        their abilities, while coaches and trainers focus on physical conditioning, mental resilience, and injury prevention. 
+        <br>
+        The commitment and teamwork displayed by the participants demonstrate the level of passion and pride each team has for 
+        their school.
+
+        <div class="main-news-img">
+          <img src="images/art-pic-3.jpg">
+        </div>
+        <p>SAC building for cultural shows, dances, and conventions are held in this building. Kyle Sabatin, KNTV
+        </p>
+        <br>
+
+        In addition to the sporting events, this year's intramurals will feature cultural showcases, talent shows, and interactive
+        booths, where students can explore various extracurricular activities. 
+        <br>
+        <br>
+        These booths, ranging from food stalls to student organizations, will provide everyone with a chance to relax, have fun, and engage with the community. 
+        <br>
+        <br>
+        One of the highlights of the event will be the series of concerts and performances throughout the week. Local bands, 
+        talented singers, and dance troupes are set to take the stage, providing a perfect way to unwind after a day of fierce 
+        competition. 
+        <br>
+        <br>
+        Furthermore, the intramurals will also serve as a platform to celebrate the creative talents of students, 
+        with art exhibitions.
+      </span>
+      </span>
+    </div>
+
+  </div>
+
+</section><!--news-details-end-->
+
+<!--RELATED NEWS-->
+<section class="related-news">
+  <!--heading-popular-->
+  <div class="news-heading">
+    <h3>More From KNTV</h3>
+  </div>
+
+  <!--container-->
+  <div class="r-news-container">
+
+        <!--box1-->
+        <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-1.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              Gyatt Hunter Spotted
+            </a>
+            <!--DETAILS-->
+            <span class="r-box-details">
+              This elusive character was spotted last Intramurals
+            </span>
+          </div>
+        </div>
+
+         <!--box2-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-2.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              Gender Reveal
+            </a>
+            <!--DETAILS-->
+            <span class="r-box-details">
+              JL finally tells what gender he is, after coming out..
+            </span>
+          </div>
+        </div>
+
+         <!--box3-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-3.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              Campus Director missing
+            </a>
+            <!--DETAILS-->
+            <span class="r-box-details">
+              Starting from first semester he hasn't been found
+            </span>
+          </div>
+        </div>
+
+         <!--box4-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-4b.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              Pastor's new church
+            </a>
+            <!--DETAILS-->
+            <span class="r-box-details">
+              Kenjie establishes church inside the campus
+            </span>
+          </div>
+        </div>
+
+         <!--box5-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-5b.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              CTU Danao Crush
+            </a>
+            <!--DETAILS-->
+            <span class="r-box-details">
+              Look into these handsome gentlemen only in CTU
+            </span>
+          </div>
+        </div>
+
+         <!--box6-->
+         <div class="r-news-box">
+          <div class="r-news-img">
+            <img src="images/r-news-6b.jpg" />
+          </div>
+          <div class="r-news-text">
+            <!--TITLE-->
+            <a href="#" class="news-box-p-name">
+              Possible suspects
+            </a>
+            <!--DETAILS-->
+            </span>
+            <span class="r-box-details">
+              Photos have come up after a scamhub found inside</span>
+            </span>
+          </div>
+        </div>
+  
+  </div>
+
+</section><!--related-news-end-->
+
+    <!--footer-->
+    <footer>
+      <!--footer container start-->
+      <div class="footer-container">
+
+        <!--LINK-->
+        <div class="footer-link-box">
+          <strong>Sections</strong>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Entertainment</a></li>
+              <li><a href="#">Lifestyle</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Business</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Weather</a></li>
+              <li><a href="#">Regions</a></li>
+              <li><a href="#">World</a></li>
+              <li><a href="#">Opinion</a></li>
+              <li><a href="#">Classified Odd</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Multimedia</strong>
+          <ul>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Slideshows</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Digital Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Programs</strong>
+          <ul>
+            <li><a href="#">KNTV</a></li>
+            <li><a href="#">KPCTV</a></li>
+            <li><a href="#">SPCTN</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-link-box">
+          <strong>Highlights</strong>
+          <ul>
+            <li><a href="#">Livestream</a></li>
+            <li><a href="#">Fact Check</a></li>
+            <li><a href="#">KPC Corner</a></li> 
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Brand News</a></li>
+            <li><a href="#">Paris Olympics</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-subscribe">
+          <strong>Subscribe Now</strong>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Example@gmail.com" required />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <!--footer container end-->
+
+      <!--bottom-footer-->
+      <div class="footer-bottom">
+        <span class="footer-owner">Made By DennyDespot</span>
+        <span class="copyright">© Copyright 2024</span>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
