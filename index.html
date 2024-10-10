@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KNTVA</title>
+    <title>KNews</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut-icon" href="images/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,10 +90,10 @@
             <li><a href="#">Brand News</a></li>
             <li><a href="#">Intramurals</a></li>
           </ul>
-          </div> 
+        </div> 
 
       </div>
-      </ul>
+    </ul>
 
       <div class="nav-btns">
         <!-- Search Box -->
@@ -111,11 +111,72 @@
             </div>
           </form>
         </label>
+        
+        <div class="userDropdown">
 
-        <a href="#" class="nav-user">
-          <i class="fa-solid fa-user"></i>
-        </a>
+          <button onclick="userDropDown()" class="userDropbtn">
+            <i class="fa-solid fa-user"></i>
+          </button>
+      
+          <div id="userDropdown" class="userDropdown-content">
+
+            <div class="dropdown-link-box">
+                <div class="dropdown-links">
+                  <ul>
+                    <li><button><a href="#">Profile</a></li></button>
+                    <li><button><a href="#">Settings</a></li></button>
+                    <li><button id="logoutBtn">Logout</button></li>
+                  </ul>
+                </div>
+            </div> 
+        </div>
+
+        <section class="logInForm">
+          <div id="overlay">
+              <!-- Modal -->
+              <div id="id01" class="modal">
+                  <div class="modal-content animate" id="modal-content">
+                      <div id="login-form">
+                          <div class="container">
+          
+                              <label for="login-username-email"><b>Username or Email</b></label>
+                              <input type="text" placeholder="Enter Username" id="login-username-email" required>
+          
+                              <label for="psw"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" id="login-password" required>
+          
+                              <button class="logInButton" type="button" onclick="login()">Login</button>
+          
+                              <button class="signUpButton" type="button" onclick="showSignUp()">Sign Up</button>
+          
+                          </div>
+                      </div>
+          
+                      <div id="sign-up-form">
+                          <div class="container">
+          
+                              <label for="new-username"><b>Username</b></label>
+                              <input type="text" placeholder="Enter Username" id="new-username" required>
+          
+                              <label for="new-email"><b>Email</b></label>
+                              <input type="text" placeholder="Enter Email" id="new-email" required>
+          
+                              <label for="new-password"><b>Password</b></label>
+                              <input type="password" placeholder="Enter Password" id="new-password" required>
+          
+                              <button class="signUpButton" type="button" onclick="signUp()">Sign Up</button>
+          
+                              <button class="logInButton" type="button" onclick="showLogin()">Back to Login</button>
+          
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
       </div>
+
     </nav>
     <!--navigation-end-->
 
